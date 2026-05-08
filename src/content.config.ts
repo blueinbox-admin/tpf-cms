@@ -12,6 +12,8 @@ const interviews = defineCollection({
       from: z.string().optional(),
       age: z.coerce.number().optional(),
       college: z.string().optional(),
+      major: z.string().optional(),
+      minor: z.string().optional(),
       graduateSchool: z.string().optional(),
       career: z.string().optional(),
     }),

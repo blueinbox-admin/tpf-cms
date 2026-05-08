@@ -45,6 +45,12 @@ content:
           - name: college
             label: College
             type: string
+          - name: major
+            label: Major
+            type: string
+          - name: minor
+            label: Minor
+            type: string
           - name: graduateSchool
             label: Graduate school
             type: string

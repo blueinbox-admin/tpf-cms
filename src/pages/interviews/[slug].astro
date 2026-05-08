@@ -49,6 +49,18 @@ const { name, portrait, bio, qa, excerpt } = interview.data;
               <dd class="text-slate-700">{bio.college}</dd>
             </div>
           )}
+          {bio.major && (
+            <div class="flex flex-wrap gap-2">
+              <dt class="font-semibold text-slate-900">Major:</dt>
+              <dd class="text-slate-700">{bio.major}</dd>
+            </div>
+          )}
+          {bio.minor && (
+            <div class="flex flex-wrap gap-2">
+              <dt class="font-semibold text-slate-900">Minor:</dt>
+              <dd class="text-slate-700">{bio.minor}</dd>
+            </div>
+          )}
           {bio.graduateSchool && (
             <div class="flex flex-wrap gap-2">
               <dt class="font-semibold text-slate-900">Graduate School:</dt>
