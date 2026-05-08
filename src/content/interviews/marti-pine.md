@@ -1,6 +1,6 @@
 ---
 name: Marti Pine
-portrait: /images/interviews/marti-pine.jpg.svg
+portrait: /images/interviews/marti-pine.png
 publishedAt: 2026-04-01
 bio:
   from: "Chicago, IL"
