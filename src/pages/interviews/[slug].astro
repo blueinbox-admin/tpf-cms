@@ -1,0 +1,106 @@
+---
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+export async function getStaticPaths() {
+  const interviews = await getCollection("interviews");
+  return interviews.map((interview) => ({
+    params: { slug: interview.id },
+    props: { interview },
+  }));
+}
+
+const { interview } = Astro.props;
+const { name, portrait, bio, qa, excerpt } = interview.data;
+---
+
+<BaseLayout title={`Interview w/ ${name} — The Podcast Fellowship`} description={excerpt}>
+  <article class="mx-auto max-w-4xl px-6 py-10 md:py-16">
+    <!-- Header: portrait + bio -->
+    <header class="grid gap-8 md:grid-cols-[280px_1fr] md:gap-12 md:items-start">
+      <div class="aspect-square w-full overflow-hidden border-4 border-navy">
+        <img
+          src={portrait}
+          alt={`Portrait of ${name}`}
+          class="h-full w-full object-cover"
+        />
+      </div>
+      <div>
+        <h1 class="text-4xl md:text-5xl font-medium text-navy tracking-tight">
+          {name}
+        </h1>
+        <div class="mt-2 h-1 w-24 bg-gold-soft"></div>
+        <dl class="mt-6 space-y-2 text-base">
+          {bio.from && (
+            <div class="flex flex-wrap gap-2">
+              <dt class="font-semibold text-slate-900">From:</dt>
+              <dd class="text-slate-700">{bio.from}</dd>
+            </div>
+          )}
+          {bio.age && (
+            <div class="flex flex-wrap gap-2">
+              <dt class="font-semibold text-slate-900">Age:</dt>
+              <dd class="text-slate-700">{bio.age}</dd>
+            </div>
+          )}
+          {bio.college && (
+            <div class="flex flex-wrap gap-2">
+              <dt class="font-semibold text-slate-900">College:</dt>
+              <dd class="text-slate-700">{bio.college}</dd>
+            </div>
+          )}
+          {bio.graduateSchool && (
+            <div class="flex flex-wrap gap-2">
+              <dt class="font-semibold text-slate-900">Graduate School:</dt>
+              <dd class="text-slate-700">{bio.graduateSchool}</dd>
+            </div>
+          )}
+          {bio.career && (
+            <div class="flex flex-wrap gap-2">
+              <dt class="font-semibold text-slate-900">Career:</dt>
+              <dd class="text-slate-700">{bio.career}</dd>
+            </div>
+          )}
+        </dl>
+      </div>
+    </header>
+
+    <!-- Section heading -->
+    <section class="mt-14 md:mt-20">
+      <h2 class="text-2xl md:text-3xl font-medium text-navy">The Interview</h2>
+      <div class="mt-2 h-px w-full bg-gold-soft"></div>
+
+      <!-- Q&A blocks -->
+      <div class="mt-8 space-y-8">
+        {qa.map(({ question, answer }) => (
+          <div>
+            <div
+              class="border-l-4 border-gold bg-cream px-5 py-3 text-base md:text-lg font-medium text-navy-deep"
+            >
+              {question}
+            </div>
+            <div class="prose-interview mt-4 px-1 md:px-5 text-base md:text-[17px]">
+              {answer.split(/\n\n+/).map((para) => <p>{para}</p>)}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Footer CTA to archive -->
+    <footer class="mt-16 md:mt-24 -mx-6 md:-mx-0">
+      <div class="bg-navy-deep text-white px-8 py-10 md:py-12 md:rounded-md text-center">
+        <p class="text-lg md:text-xl font-medium">Read more interviews</p>
+        <p class="mt-2 text-sm md:text-base text-slate-300">
+          Find past interviews from students.
+        </p>
+        <a
+          href="/"
+          class="mt-6 inline-block bg-gold-soft hover:bg-gold transition-colors text-navy-deep font-semibold px-8 py-3 rounded-sm"
+        >
+          Read More
+        </a>
+      </div>
+    </footer>
+  </article>
+</BaseLayout>

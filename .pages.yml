@@ -1,0 +1,68 @@
+media: public/images
+content:
+  - name: interviews
+    label: Student Interviews
+    type: collection
+    path: src/content/interviews
+    view:
+      fields: [name, publishedAt]
+      primary: name
+      sort: [publishedAt, name]
+      default:
+        sort: publishedAt
+        order: desc
+    fields:
+      - name: name
+        label: Full name
+        type: string
+        required: true
+      - name: publishedAt
+        label: Publish date
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: portrait
+        label: Portrait photo
+        type: image
+        required: true
+        options:
+          path: public/images/interviews
+      - name: excerpt
+        label: One-line excerpt
+        type: string
+        description: Shows under the name on the archive page. Keep it short.
+      - name: bio
+        label: Bio
+        type: object
+        fields:
+          - name: from
+            label: From (city, state)
+            type: string
+          - name: age
+            label: Age
+            type: number
+          - name: college
+            label: College
+            type: string
+          - name: graduateSchool
+            label: Graduate school
+            type: string
+          - name: career
+            label: Career
+            type: string
+      - name: qa
+        label: Questions & answers
+        type: object
+        list: true
+        fields:
+          - name: question
+            label: Question
+            type: string
+            required: true
+          - name: answer
+            label: Answer
+            type: text
+            required: true
+            options:
+              rows: 8

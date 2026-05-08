@@ -1,17 +1,86 @@
 ---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
 
+const interviews = (await getCollection("interviews")).sort(
+  (a, b) =>
+    new Date(b.data.publishedAt).getTime() -
+    new Date(a.data.publishedAt).getTime()
+);
+
+const formatDate = (d: Date) =>
+  d.toLocaleDateString("en-US", { month: "long", year: "numeric" });
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout
+  title="Student Interviews — The Podcast Fellowship"
+  description="Long-form interviews with students of The Podcast Fellowship."
+>
+  <div class="mx-auto max-w-4xl px-6 py-10 md:py-16">
+    <header>
+      <h1 class="text-4xl md:text-5xl font-medium text-navy tracking-tight">
+        Student Interviews
+      </h1>
+      <div class="mt-2 h-1 w-24 bg-gold-soft"></div>
+      <p class="mt-6 text-base md:text-lg text-slate-600 max-w-2xl">
+        Long-form conversations with students of The Podcast Fellowship — on
+        Jewish identity, learning, and the people who shaped their journey.
+      </p>
+    </header>
+
+    <section class="mt-12 md:mt-16">
+      <ul class="grid gap-8 md:grid-cols-2">
+        {interviews.map((interview) => (
+          <li>
+            <a
+              href={`/interviews/${interview.id}/`}
+              class="group block bg-white border border-slate-200 hover:border-navy transition-colors overflow-hidden"
+            >
+              <div class="aspect-[4/3] overflow-hidden bg-slate-100">
+                <img
+                  src={interview.data.portrait}
+                  alt={`Portrait of ${interview.data.name}`}
+                  class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <div class="p-5">
+                <p class="text-xs uppercase tracking-wider text-gold font-semibold">
+                  {formatDate(new Date(interview.data.publishedAt))}
+                </p>
+                <h2 class="mt-2 text-xl md:text-2xl font-medium text-navy">
+                  {interview.data.name}
+                </h2>
+                {interview.data.excerpt && (
+                  <p class="mt-2 text-sm md:text-base text-slate-600 line-clamp-3">
+                    {interview.data.excerpt}
+                  </p>
+                )}
+                <p class="mt-4 text-sm font-semibold text-navy group-hover:text-gold transition-colors">
+                  Read interview →
+                </p>
+              </div>
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      {interviews.length === 0 && (
+        <p class="text-slate-500 text-center py-12">
+          No interviews published yet. Check back soon.
+        </p>
+      )}
+    </section>
+
+    <footer class="mt-20 pt-10 border-t border-slate-200 text-center text-sm text-slate-500">
+      <p>
+        The Podcast Fellowship —{" "}
+        <a
+          href="https://podcastfellowship.org/"
+          class="text-navy hover:text-gold transition-colors"
+        >
+          podcastfellowship.org
+        </a>
+      </p>
+    </footer>
+  </div>
+</BaseLayout>
