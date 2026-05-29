@@ -61,6 +61,6 @@ qa:
       Crash Course on Jewish History podcast.  I feel that I know many aspects
       of Jewish history, but I wanted something that put it all together into a
       succinct timeline, even though it's obviously a very simplified
-      version.  This is something I want to listen to again to solidify the
+      version.  This is something I would listen to again to solidify the
       information and give me a better basis.
 ---
