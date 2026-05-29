@@ -57,6 +57,10 @@ qa:
       the rabbi and rebetzen would lead together.  It was a very nice open
       space, without judgement on us for the questions we asked.
   - question: Who is your favorite speaker?  What is your favorite podcast topic?
-    answer: I really have enjoyed Rabbi Henry Abrahamson, especially his Crash
-      Course on Jewish History podcast.
+    answer: I've really enjoyed listening to Rabbi Henry Abrahamson, especially his
+      Crash Course on Jewish History podcast.  I feel that I know many aspects
+      of Jewish history, but I wanted something that put it all together into a
+      succinct timeline, even though it's obviously a very simplified
+      version.  This is something I want to listen to again to solidify the
+      information and give me a better basis.
 ---
