@@ -28,6 +28,9 @@ qa:
     answer: I grew up in a Conservative household, with a Conservative Jewish
       education until around 8th grade, which culminated in a trip to
       Israel.  Then I stopped with formal Jewish education.  In college, I took
-      it upon myself to go to different Jewish centers on campus to learn Parsha
+      it upon myself to go to different Jewish centers on campus to learn parsha
       and topics of spirituality.
+  - question: How did you find out about The Podcast Fellowship?
+    answer: I found about TPF through friends and the rabbi and rebetzen on campus.
+  - {}
 ---
