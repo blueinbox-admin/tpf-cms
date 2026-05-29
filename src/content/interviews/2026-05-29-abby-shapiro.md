@@ -32,5 +32,11 @@ qa:
       and topics of spirituality.
   - question: How did you find out about The Podcast Fellowship?
     answer: I found about TPF through friends and the rabbi and rebetzen on campus.
-  - {}
+  - question: Would you have been interested in TPF without the $15 stipend?
+    answer: >-
+      I would definitely like to think so!
+
+      I go to many Hillel, Chabad, JET and JLIC events and classes, many of
+      which do not have any money attached.  (Laughing) The stipend is
+      definitely a nice thing!
 ---
