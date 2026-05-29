@@ -69,4 +69,7 @@ qa:
       involved in so many different things: community events, Shabboses.   So, I
       don't know exactly what label I would put on it, but I would say my
       INTEREST has definitely grown, as well as my observance."
+  - question: Have you witnessed antisemitism on campus since October 7, 2023?
+    answer: I have not personally been the target of antisemitism, but I do know of
+      some experiences on campus with others.
 ---
