@@ -39,4 +39,9 @@ qa:
       I go to many Hillel, Chabad, JET and JLIC events and classes, many of
       which do not have any money attached.  (Laughing) The stipend is
       definitely a nice thing!
+  - question: Tell us about your experience with TPF.  What are your interactions
+      with your mentor like?  How do you prepare and discuss podcasts with her?
+    answer: "I remember the first discussion; it was in the Starbucks in our Student
+      Union.  I remember feeling a bit nervous to share my podcast...I believe I
+      had notes on my notes app.  (Tone changes)  But then I "
 ---
