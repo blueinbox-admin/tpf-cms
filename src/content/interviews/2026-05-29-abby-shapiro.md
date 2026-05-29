@@ -35,6 +35,7 @@ qa:
   - question: How did you find out about The Podcast Fellowship?
     answer: I found about TPF through friends and the rabbi and rebetzen on campus,
       Rabbi Shmuel and Jackie Hauss of JET and JLIC
+      (https://illinois.oujlic.org/)
   - question: Would you have been interested in TPF without the $15 stipend?
     answer: >-
       I would definitely like to think so!
