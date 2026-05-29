@@ -41,12 +41,18 @@ qa:
       definitely a nice thing!
   - question: Tell us about your experience with TPF.  What are your interactions
       with your mentor like?  How do you prepare and discuss podcasts with her?
-    answer: "I remember my first discussion: it was in the Starbucks in our Student
+    answer: >-
+      I remember my first discussion: it was in the Starbucks in our Student
       Union.  We were a group of four people and the rebetzen.  I remember
       feeling a bit nervous to share my podcast...I believe I had notes on my
       notes app.  And I remember HAVING FUN talking with people.  It was really
       a good time.  I was able to develop friendships through TPF, many which
-      I'm still friends with today.  That has been a really nice part of this
-      fellowship.  I was also able to develop a stronger relationship with my
-      rebetzen through TPF, which was very lovely for me."
+      I'm still friends with today.  I was also able to develop a stronger
+      relationship with my rebetzen through TPF, which was very lovely for me.
+
+
+      More on the learning model.  Everyone in the group shared their respective
+      podcasts.  People asked questions, and it turned into a collaborative
+      discussion
+  - {}
 ---
