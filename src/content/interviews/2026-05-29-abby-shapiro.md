@@ -56,5 +56,7 @@ qa:
       discussion, with insights and responses from the rebetzen.  Frequently,
       the rabbi and rebetzen would lead together.  It was a very nice open
       space, without judgement on us for the questions we asked.
-  - {}
+  - question: Who is your favorite speaker?  What is your favorite podcast topic?
+    answer: I really have enjoyed Rabbi Henry Abrahamson, especially his Crash
+      Course on Jewish History podcast.
 ---
