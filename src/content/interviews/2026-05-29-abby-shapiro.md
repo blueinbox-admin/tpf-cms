@@ -23,8 +23,8 @@ qa:
 
       My Nonny (grandmother) told me that her grandmother from Ukraine (who
       lived with them until her passing when my Nonny was 10) came over in the
-      early 1900's, and that during the Prohibition, she used to sell alcohol
-      that she made in their bath tub.
+      early 1900's, and that during Prohibition, she used to sell alcohol that
+      she made in their bath tub.
   - question: What type of Jewish home did you grow up in, and what type of Jewish
       education did you receive?
     answer: I grew up in a Conservative household, with a Conservative Jewish
