@@ -23,5 +23,11 @@ qa:
 
       My grandmother did tell me that her grandmother from Ukraine lived with
       her and that she used to make alcohol in a bath tub...
-  - {}
+  - question: What type of Jewish home did you grow up in, and what type of Jewish
+      education did you receive?
+    answer: I grew up in a Conservative household, with a Conservative Jewish
+      education until around 8th grade, which culminated in a trip to
+      Israel.  Then I stopped with formal Jewish education.  In college, I took
+      it upon myself to go to different Jewish centers on campus to learn Parsha
+      and topics of spirituality.
 ---
