@@ -63,4 +63,10 @@ qa:
       succinct timeline, even though it's obviously a very simplified
       version.  This is something I would listen to again to solidify the
       information and give me a better basis.
+  - question: Where do you stand in your Jewish observance today?
+    answer: "This is something I'm still figuring out.  But it's definitely grown
+      since entering college, with the accumulation of this fellowship and being
+      involved in so many different things: community events, Shabboses.   So, I
+      don't know exactly what label I would put on it, but I would say my
+      INTEREST has definitely grown, as well as my observance."
 ---
