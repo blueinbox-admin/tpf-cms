@@ -71,5 +71,5 @@ qa:
       INTEREST has definitely grown, as well as my observance."
   - question: Have you witnessed antisemitism on campus since October 7, 2023?
     answer: I have not personally been the target of antisemitism, but I do know of
-      some experiences on campus with others.
+      experiences on campus involving others.
 ---
