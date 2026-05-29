@@ -72,4 +72,8 @@ qa:
   - question: Have you witnessed antisemitism on campus since October 7, 2023?
     answer: I have not personally been the target of antisemitism, but I do know of
       experiences on campus involving others.
+  - question: Can you summarize your experience with The Podcast Fellowship in one quote?
+    answer: The Podcast Fellowship is an amazing way to explore whatever you're
+      interested in within Judaism, and to experience comradery and discussion
+      with your Jewish peers and your mentor.
 ---
