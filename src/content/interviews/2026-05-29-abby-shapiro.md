@@ -53,6 +53,8 @@ qa:
 
       More on the learning model.  Everyone in the group shared their respective
       podcasts.  People asked questions, and it turned into a collaborative
-      discussion
+      discussion, with insights and responses from the rebetzen.  Frequently,
+      the rabbi and rebetzen would lead together.  It was a very nice open
+      space, without judgement on us for the questions we asked.
   - {}
 ---
