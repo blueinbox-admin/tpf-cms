@@ -2,7 +2,7 @@
 name: Abby Shapiro
 publishedAt: 2026-05-29
 portrait: /public/images/interviews/Abby Shapiro.jpeg
-excerpt: Abby Shapiro, May 2026
+excerpt: On breaking through shyness to grow in Jewish understanding
 bio:
   from: Northbrook, IL
   age: 20
