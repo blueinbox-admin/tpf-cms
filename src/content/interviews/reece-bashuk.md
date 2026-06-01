@@ -1,7 +1,7 @@
 ---
 name: Reece Bashuk
 publishedAt: 2025-08-01
-portrait: /public/images/interviews/Reece Bashuk (feb)_compressed.jpg
+portrait: /images/interviews/Reece Bashuk (feb)_compressed.jpg
 excerpt: On family roots from Belarus and Poland, daily tefillin, and refusing
   to let hate get in the way of pride.
 bio:

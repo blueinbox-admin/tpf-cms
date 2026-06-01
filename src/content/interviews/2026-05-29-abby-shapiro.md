@@ -1,7 +1,7 @@
 ---
 name: Abby Shapiro
 publishedAt: 2026-05-29
-portrait: /public/images/interviews/Abby Shapiro.jpeg
+portrait: /images/interviews/Abby Shapiro.jpeg
 excerpt: On breaking through shyness to grow in Jewish understanding
 bio:
   from: Northbrook, IL
