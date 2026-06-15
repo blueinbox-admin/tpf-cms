@@ -106,10 +106,10 @@ const videoTitle = `Interview with ${name}`;
         {qa.map(({ question, answer }) => (
           <div>
             <div
-              class="border-l-4 border-gold bg-cream px-5 py-3 text-base md:text-lg font-medium text-navy-deep"
-            >
-              {question}
-            </div>
+              class="prose-question border-l-4 border-gold bg-cream px-5 py-3 text-base md:text-lg font-medium text-navy-deep"
+              set:html={renderRichText(question)}
+            />
+
             <div
               class="prose-interview mt-4 px-1 md:px-5 text-base md:text-[17px]"
               set:html={renderRichText(answer)}

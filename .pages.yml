@@ -82,7 +82,7 @@ content:
         fields:
           - name: question
             label: Question
-            type: string
+            type: rich-text
             required: true
           - name: answer
             label: Answer

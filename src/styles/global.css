@@ -33,6 +33,21 @@ body {
   margin-bottom: 0;
 }
 
+.prose-question p {
+  margin: 0;
+}
+
+.prose-question a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--color-gold);
+  text-underline-offset: 2px;
+}
+
+.prose-question a:hover {
+  color: var(--color-navy);
+}
+
 .prose-interview a {
   color: var(--color-navy);
   text-decoration: underline;
