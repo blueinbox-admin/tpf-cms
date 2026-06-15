@@ -16,8 +16,9 @@ bio:
 qa:
   - question: Reece, tell us about your Jewish family background.
     answer: >-
-      My ancestors are from Belarus and Poland. My mother's grandmother came
-      here when she was 17 before World War II, through Ellis Island.
+      My ancestors are from [Belarus and Poland.](www.google.com) My mother's
+      grandmother came here when she was 17 before World War II, through Ellis
+      Island.
 
 
       I grew up in a Reform Jewish home. I attended Hebrew School and Jewish
