@@ -34,6 +34,22 @@ content:
         label: One-line excerpt
         type: string
         description: Shows under the name on the archive page. Keep it short.
+      - name: vimeoUrl
+        label: Vimeo video link
+        type: string
+        description: >-
+          Optional. Paste the Vimeo share URL (works for public, unlisted, and
+          private videos). Leave blank for no video.
+      - name: videoPlacement
+        label: Where to show the video
+        type: select
+        description: Only used if a Vimeo link is set above.
+        options:
+          default: top
+          values:
+            - { value: top, label: Top (above the bio) }
+            - { value: after-bio, label: After the bio, before the interview }
+            - { value: bottom, label: Bottom of the page }
       - name: bio
         label: Bio
         type: object
@@ -70,7 +86,5 @@ content:
             required: true
           - name: answer
             label: Answer
-            type: text
+            type: rich-text
             required: true
-            options:
-              rows: 8

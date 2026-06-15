@@ -1,6 +1,8 @@
 ---
-import { getCollection, render } from "astro:content";
+import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import VimeoEmbed from "../../components/VimeoEmbed.astro";
+import { renderRichText, vimeoEmbedUrl } from "../../lib/content";
 
 export async function getStaticPaths() {
   const interviews = await getCollection("interviews");
@@ -11,11 +13,22 @@ export async function getStaticPaths() {
 }
 
 const { interview } = Astro.props;
-const { name, portrait, bio, qa, excerpt } = interview.data;
+const { name, portrait, bio, qa, excerpt, vimeoUrl, videoPlacement } =
+  interview.data;
+
+const hasVideo = !!vimeoEmbedUrl(vimeoUrl);
+const placement = videoPlacement ?? "top";
+const videoTitle = `Interview with ${name}`;
 ---
 
 <BaseLayout title={`Interview w/ ${name} — The Podcast Fellowship`} description={excerpt}>
   <article class="mx-auto max-w-4xl px-6 py-10 md:py-16">
+    {hasVideo && placement === "top" && (
+      <div class="mb-10 md:mb-14">
+        <VimeoEmbed url={vimeoUrl} title={videoTitle} />
+      </div>
+    )}
+
     <!-- Header: portrait + bio -->
     <header class="grid gap-8 md:grid-cols-[280px_1fr] md:gap-12 md:items-start">
       <div class="aspect-square w-full overflow-hidden border-4 border-navy">
@@ -77,6 +90,12 @@ const { name, portrait, bio, qa, excerpt } = interview.data;
       </div>
     </header>
 
+    {hasVideo && placement === "after-bio" && (
+      <div class="mt-12 md:mt-16">
+        <VimeoEmbed url={vimeoUrl} title={videoTitle} />
+      </div>
+    )}
+
     <!-- Section heading -->
     <section class="mt-14 md:mt-20">
       <h2 class="text-2xl md:text-3xl font-medium text-navy">The Interview</h2>
@@ -91,13 +110,20 @@ const { name, portrait, bio, qa, excerpt } = interview.data;
             >
               {question}
             </div>
-            <div class="prose-interview mt-4 px-1 md:px-5 text-base md:text-[17px]">
-              {answer.split(/\n\n+/).map((para) => <p>{para}</p>)}
-            </div>
+            <div
+              class="prose-interview mt-4 px-1 md:px-5 text-base md:text-[17px]"
+              set:html={renderRichText(answer)}
+            />
           </div>
         ))}
       </div>
     </section>
+
+    {hasVideo && placement === "bottom" && (
+      <div class="mt-14 md:mt-20">
+        <VimeoEmbed url={vimeoUrl} title={videoTitle} />
+      </div>
+    )}
 
     <!-- Footer CTA to archive -->
     <footer class="mt-16 md:mt-24 -mx-6 md:-mx-0">

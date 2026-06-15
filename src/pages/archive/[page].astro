@@ -1,0 +1,79 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import InterviewGrid from "../../components/InterviewGrid.astro";
+import { groupByYearWindow } from "../../lib/content";
+
+export async function getStaticPaths() {
+  const all = (await getCollection("interviews")).sort(
+    (a, b) =>
+      new Date(b.data.publishedAt).getTime() -
+      new Date(a.data.publishedAt).getTime()
+  );
+  const windows = groupByYearWindow(all, new Date());
+
+  // Window 0 lives on the home page; archive covers windows 1..n as pages 2..n+1.
+  return windows.slice(1).map((window) => ({
+    params: { page: String(window.index + 1) },
+    props: { window, total: windows.length },
+  }));
+}
+
+const { window, total } = Astro.props;
+const page = window.index + 1;
+const newerHref = page - 1 === 1 ? "/" : `/archive/${page - 1}/`;
+const hasOlder = window.index + 1 < total;
+---
+
+<BaseLayout
+  title={`Previous interviews (${window.label}) — The Podcast Fellowship`}
+  description="Past student interviews from The Podcast Fellowship."
+>
+  <div class="mx-auto max-w-4xl px-6 py-10 md:py-16">
+    <header>
+      <a href={newerHref} class="text-sm font-semibold text-navy hover:text-gold transition-colors">
+        ← Newer interviews
+      </a>
+      <h1 class="mt-4 text-4xl md:text-5xl font-medium text-navy tracking-tight">
+        Previous Interviews
+      </h1>
+      <div class="mt-2 h-1 w-24 bg-gold-soft"></div>
+      <p class="mt-6 text-base md:text-lg text-slate-600 max-w-2xl">
+        {window.label}
+      </p>
+    </header>
+
+    <section class="mt-12 md:mt-16">
+      <InterviewGrid interviews={window.items} />
+
+      <div class="mt-12 md:mt-16 flex flex-wrap items-center justify-between gap-4">
+        <a
+          href={newerHref}
+          class="inline-block border border-slate-300 text-slate-700 hover:border-navy hover:text-navy transition-colors font-semibold px-6 py-3 rounded-sm"
+        >
+          ← Newer interviews
+        </a>
+        {hasOlder && (
+          <a
+            href={`/archive/${page + 1}/`}
+            class="inline-block border border-navy text-navy hover:bg-navy hover:text-white transition-colors font-semibold px-8 py-3 rounded-sm"
+          >
+            Previous interviews →
+          </a>
+        )}
+      </div>
+    </section>
+
+    <footer class="mt-20 pt-10 border-t border-slate-200 text-center text-sm text-slate-500">
+      <p>
+        The Podcast Fellowship —{" "}
+        <a
+          href="https://podcastfellowship.org/"
+          class="text-navy hover:text-gold transition-colors"
+        >
+          podcastfellowship.org
+        </a>
+      </p>
+    </footer>
+  </div>
+</BaseLayout>

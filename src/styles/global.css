@@ -32,3 +32,50 @@ body {
 .prose-interview p:last-child {
   margin-bottom: 0;
 }
+
+.prose-interview a {
+  color: var(--color-navy);
+  text-decoration: underline;
+  text-decoration-color: var(--color-gold-soft);
+  text-underline-offset: 2px;
+  transition: color 0.15s;
+}
+
+.prose-interview a:hover {
+  color: var(--color-gold);
+}
+
+.prose-interview strong {
+  font-weight: 600;
+  color: #111827;
+}
+
+.prose-interview em {
+  font-style: italic;
+}
+
+.prose-interview ul,
+.prose-interview ol {
+  margin: 0 0 1rem 1.5rem;
+  line-height: 1.7;
+}
+
+.prose-interview ul {
+  list-style: disc;
+}
+
+.prose-interview ol {
+  list-style: decimal;
+}
+
+.prose-interview li {
+  margin-bottom: 0.25rem;
+}
+
+.prose-interview blockquote {
+  border-left: 3px solid var(--color-gold-soft);
+  padding-left: 1rem;
+  margin: 0 0 1rem;
+  color: #374151;
+  font-style: italic;
+}

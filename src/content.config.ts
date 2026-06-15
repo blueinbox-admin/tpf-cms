@@ -24,6 +24,8 @@ const interviews = defineCollection({
       })
     ),
     excerpt: z.string().optional(),
+    vimeoUrl: z.string().optional(),
+    videoPlacement: z.enum(["top", "after-bio", "bottom"]).optional(),
   }),
 });
 

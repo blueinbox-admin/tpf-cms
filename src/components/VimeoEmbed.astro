@@ -1,0 +1,25 @@
+---
+import { vimeoEmbedUrl } from "../lib/content";
+
+interface Props {
+  url: string | undefined;
+  title?: string;
+}
+
+const { url, title } = Astro.props;
+const embed = vimeoEmbedUrl(url);
+---
+
+{embed && (
+  <div class="relative w-full overflow-hidden bg-navy-deep" style="aspect-ratio: 16 / 9;">
+    <iframe
+      src={embed}
+      title={title ?? "Vimeo video"}
+      class="absolute inset-0 h-full w-full"
+      frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowfullscreen
+      loading="lazy"
+    ></iframe>
+  </div>
+)}
