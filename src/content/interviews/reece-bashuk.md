@@ -4,6 +4,8 @@ publishedAt: 2025-08-01
 portrait: /images/interviews/Reece Bashuk (feb)_compressed.jpg
 excerpt: On family roots from Belarus and Poland, daily tefillin, and refusing
   to let hate get in the way of pride.
+vimeoUrl: https://vimeo.com/76979871
+videoPlacement: top
 bio:
   from: Dunwoody, GA
   age: 19
@@ -13,7 +15,7 @@ bio:
   career: Aspiring Pediatrician
 qa:
   - question: Reece, tell us about your Jewish family background.
-    answer: >
+    answer: >-
       My ancestors are from Belarus and Poland. My mother's grandmother came
       here when she was 17 before World War II, through Ellis Island.
 
@@ -23,13 +25,12 @@ qa:
       programs and other temple programs later on. I really enjoyed my Jewish
       upbringing; I was very involved.
   - question: How did you hear about The Podcast Fellowship?
-    answer: >
-      Rabbi Netanel Friedman (of Atlanta Scholar's Kollel), whom I actually know
-      through my father because they were on an Israel trip together, reached
-      out to me last summer asking me if I want to be part of TPF. I immediately
-      loved the idea and how it sounded.
+    answer: Rabbi Netanel Friedman (of Atlanta Scholar's Kollel), whom I actually
+      know through my father because they were on an Israel trip together,
+      reached out to me last summer asking me if I want to be part of TPF. I
+      immediately loved the idea and how it sounded.
   - question: Tell us about your experience with TPF.
-    answer: >
+    answer: >-
       My mentor Rabbi Netanel is super-great and easy to work with. He always
       finds time to meet with me if I can't make the group discussion because of
       whatever I have going on. I listen to the podcasts and try to think deeply
@@ -47,13 +48,12 @@ qa:
       Sometimes Rabbi Netanel comes up to Athens and we have dinner together.
       It's nice to have that mentor that's looking out for me.
   - question: Who is your favorite podcast speaker?
-    answer: >
-      I like Rabbi Lord Jonathan Sacks. Some of his talks are very deep and hard
-      for me to follow, but I do like his depth; he is a profound speaker and
-      does a good job at seeing the main point. The way he talks is very moving;
-      it's sad that he's no longer with us.
+    answer: I like Rabbi Lord Jonathan Sacks. Some of his talks are very deep and
+      hard for me to follow, but I do like his depth; he is a profound speaker
+      and does a good job at seeing the main point. The way he talks is very
+      moving; it's sad that he's no longer with us.
   - question: Where do you stand in your Jewish observance today?
-    answer: >
+    answer: >-
       I don't really consider myself Reform. I consider myself Jewish; I don't
       like to put labels on it.
 
@@ -65,7 +65,7 @@ qa:
       went on a Poland trip recently. I'm a proud Jew and I wouldn't trade that
       for anything.
   - question: Did you witness antisemitism after and since October 7th, 2023?
-    answer: >
+    answer: >-
       October 7th definitely sparked antisemitism: that we've all seen. But
       actually, at my university they do a good job of combatting it, mitigating
       it and dealing with it well. You can tell where the university stands;
@@ -87,8 +87,7 @@ qa:
       religion and I'm not going to let whatever hate stop me.
   - question: Reece, can you sum up your experience with The Podcast Fellowship in
       one quote?
-    answer: >
-      "I think it's a great way to learn about Judaism in a very relaxed and
+    answer: "\"I think it's a great way to learn about Judaism in a very relaxed and
       comfortable space, in a way that you can choose what you want to learn
-      about."
+      about.\""
 ---
