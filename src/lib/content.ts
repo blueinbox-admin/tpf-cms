@@ -8,11 +8,18 @@ import { marked } from "marked";
 export function renderRichText(input: string | undefined | null): string {
   if (!input) return "";
   const html = marked.parse(input, { async: false }) as string;
-  // Open external links in a new tab.
-  return html.replace(
-    /<a\s+href="(https?:\/\/[^"]*)"/g,
-    '<a target="_blank" rel="noopener noreferrer" href="$1"'
-  );
+
+  // Normalize links: prepend https:// to bare external URLs (so a CMS editor
+  // can type "www.google.com" and it still works), and open external links
+  // in a new tab. Internal/anchor/mailto/tel links are left untouched.
+  return html.replace(/<a href="([^"]*)"([^>]*)>/g, (match, href, rest) => {
+    if (/^(\/|#|mailto:|tel:)/i.test(href)) return match;
+
+    let url = href;
+    if (!/^https?:\/\//i.test(href)) url = `https://${href}`;
+
+    return `<a target="_blank" rel="noopener noreferrer" href="${url}"${rest}>`;
+  });
 }
 
 /**

@@ -37,27 +37,22 @@ body {
   margin: 0;
 }
 
-.prose-question a {
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-color: var(--color-gold);
-  text-underline-offset: 2px;
-}
-
-.prose-question a:hover {
-  color: var(--color-navy);
-}
-
+.prose-question a,
 .prose-interview a {
-  color: var(--color-navy);
+  color: #1d4ed8;
   text-decoration: underline;
-  text-decoration-color: var(--color-gold-soft);
   text-underline-offset: 2px;
   transition: color 0.15s;
 }
 
+.prose-question a:hover,
 .prose-interview a:hover {
-  color: var(--color-gold);
+  color: #1e40af;
+}
+
+.prose-question a:visited,
+.prose-interview a:visited {
+  color: #1d4ed8;
 }
 
 .prose-interview strong {
