@@ -2,31 +2,27 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import InterviewGrid from "../../components/InterviewGrid.astro";
-import { groupByYearWindow } from "../../lib/content";
+import { paginateInterviews } from "../../lib/content";
 
 export async function getStaticPaths() {
-  const all = (await getCollection("interviews")).sort(
-    (a, b) =>
-      new Date(b.data.publishedAt).getTime() -
-      new Date(a.data.publishedAt).getTime()
-  );
-  const windows = groupByYearWindow(all, new Date());
+  const all = await getCollection("interviews");
+  const pages = paginateInterviews(all);
 
-  // Window 0 lives on the home page; archive covers windows 1..n as pages 2..n+1.
-  return windows.slice(1).map((window) => ({
-    params: { page: String(window.index + 1) },
-    props: { window, total: windows.length },
+  // Page 0 lives on the home page; archive covers pages 1..n as URLs 2..n+1.
+  return pages.slice(1).map((page) => ({
+    params: { page: String(page.index + 1) },
+    props: { page, total: pages.length },
   }));
 }
 
-const { window, total } = Astro.props;
-const page = window.index + 1;
-const newerHref = page - 1 === 1 ? "/" : `/archive/${page - 1}/`;
-const hasOlder = window.index + 1 < total;
+const { page, total } = Astro.props;
+const pageNum = page.index + 1;
+const newerHref = pageNum - 1 === 1 ? "/" : `/archive/${pageNum - 1}/`;
+const hasOlder = page.index + 1 < total;
 ---
 
 <BaseLayout
-  title={`Previous interviews${window.label ? ` (${window.label})` : ""} — The Podcast Fellowship`}
+  title="Previous interviews — The Podcast Fellowship"
   description="Past student interviews from The Podcast Fellowship."
 >
   <div class="mx-auto max-w-4xl px-6 py-10 md:py-16">
@@ -38,15 +34,10 @@ const hasOlder = window.index + 1 < total;
         Previous Interviews
       </h1>
       <div class="mt-2 h-1 w-24 bg-gold-soft"></div>
-      {window.label && (
-        <p class="mt-6 text-base md:text-lg text-slate-600 max-w-2xl">
-          {window.label}
-        </p>
-      )}
     </header>
 
     <section class="mt-12 md:mt-16">
-      <InterviewGrid interviews={window.items} />
+      <InterviewGrid interviews={page.items} />
 
       <div class="mt-12 md:mt-16 flex flex-wrap items-center justify-between gap-4">
         <a
@@ -57,7 +48,7 @@ const hasOlder = window.index + 1 < total;
         </a>
         {hasOlder && (
           <a
-            href={`/archive/${page + 1}/`}
+            href={`/archive/${pageNum + 1}/`}
             class="inline-block border border-navy text-navy hover:bg-navy hover:text-white transition-colors font-semibold px-8 py-3 rounded-sm"
           >
             Previous interviews →

@@ -2,17 +2,13 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import InterviewGrid from "../components/InterviewGrid.astro";
-import { groupByYearWindow } from "../lib/content";
+import { paginateInterviews } from "../lib/content";
 
-const all = (await getCollection("interviews")).sort(
-  (a, b) =>
-    new Date(b.data.publishedAt).getTime() -
-    new Date(a.data.publishedAt).getTime()
-);
+const all = await getCollection("interviews");
 
-const windows = groupByYearWindow(all, new Date());
-const current = windows[0];
-const hasOlder = windows.length > 1;
+const pages = paginateInterviews(all);
+const current = pages[0];
+const hasOlder = pages.length > 1;
 ---
 
 <BaseLayout
@@ -26,7 +22,7 @@ const hasOlder = windows.length > 1;
       </h1>
       <div class="mt-2 h-1 w-24 bg-gold-soft"></div>
       <p class="mt-6 text-base md:text-lg text-slate-600 max-w-2xl">
-        Long-form conversations with students of The Podcast Fellowship — on
+        Long-form conversations with students of The Podcast Fellowship about
         Jewish identity, learning, and the people who shaped their journey.
       </p>
     </header>

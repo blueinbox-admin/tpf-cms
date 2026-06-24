@@ -57,58 +57,37 @@ export function vimeoEmbedUrl(input: string | undefined | null): string | null {
   return `https://player.vimeo.com/video/${id}${hash ? `?h=${hash}` : ""}`;
 }
 
-const MS_PER_DAY = 1000 * 60 * 60 * 24;
+/** Interviews per page (home + each archive page). */
+const PAGE_SIZE = 12;
 
-/** Undated archive interviews are paged in groups of this size. */
-const ARCHIVE_PAGE_SIZE = 12;
-
-export interface InterviewWindow {
-  /** Contiguous position: 0 = first (most recent) window, shown on the home page. */
+export interface InterviewPage {
+  /** Contiguous position: 0 = first page (newest), shown on the home page. */
   index: number;
-  /** e.g. "2025" or "2024–2025"; empty for the undated archive. */
-  label: string;
   items: any[];
 }
 
 /**
- * Build the ordered list of windows for the archive.
+ * Paginate interviews newest-first by a fixed count — not by date window.
  *
- * Dated interviews are grouped into rolling 12-month windows counting back from
- * `now`, newest first (empty year-gaps skipped). Undated "previous interviews"
- * follow, ordered by their `order` field and chunked into fixed-size pages so
- * the archive never becomes one giant list. Window indexes are contiguous so
- * the /archive/[page] navigation chains cleanly.
+ * Sort order: dated interviews first, most recent date first; then undated
+ * "previous interviews" in their curated `order`. The result is chunked into
+ * pages of PAGE_SIZE so the home page (page 0) and each "Previous interviews"
+ * page are always a tidy size, whether or not interviews are dated. Dates,
+ * when present, only affect a card's label and sort position.
  */
-export function groupByYearWindow(items: any[], now: Date): InterviewWindow[] {
-  const dated = items.filter((i) => i.data.publishedAt);
-  const undated = items.filter((i) => !i.data.publishedAt);
+export function paginateInterviews(items: any[]): InterviewPage[] {
+  const sorted = [...items].sort((a, b) => {
+    const ad = a.data.publishedAt ? new Date(a.data.publishedAt).getTime() : null;
+    const bd = b.data.publishedAt ? new Date(b.data.publishedAt).getTime() : null;
+    if (ad !== null && bd !== null) return bd - ad; // both dated: newest first
+    if (ad !== null) return -1; // dated before undated
+    if (bd !== null) return 1;
+    return (a.data.order ?? 0) - (b.data.order ?? 0); // both undated: curated order
+  });
 
-  // --- Dated: rolling 12-month windows, newest first. ---
-  const buckets = new Map<number, any[]>();
-  for (const item of dated) {
-    const published = new Date(item.data.publishedAt);
-    const daysAgo = Math.floor((now.getTime() - published.getTime()) / MS_PER_DAY);
-    const idx = Math.max(0, Math.floor(daysAgo / 365)); // future-dated -> most recent
-    if (!buckets.has(idx)) buckets.set(idx, []);
-    buckets.get(idx)!.push(item);
+  const pages: InterviewPage[] = [];
+  for (let i = 0; i < sorted.length; i += PAGE_SIZE) {
+    pages.push({ index: pages.length, items: sorted.slice(i, i + PAGE_SIZE) });
   }
-
-  const windows: InterviewWindow[] = [...buckets.keys()]
-    .sort((a, b) => a - b)
-    .map((key) => {
-      const group = buckets.get(key)!;
-      const years = group.map((i) => new Date(i.data.publishedAt).getFullYear());
-      const min = Math.min(...years);
-      const max = Math.max(...years);
-      return { index: 0, label: min === max ? `${min}` : `${min}–${max}`, items: group };
-    });
-
-  // --- Undated: ordered by `order`, chunked into archive pages. ---
-  undated.sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0));
-  for (let i = 0; i < undated.length; i += ARCHIVE_PAGE_SIZE) {
-    windows.push({ index: 0, label: "", items: undated.slice(i, i + ARCHIVE_PAGE_SIZE) });
-  }
-
-  // Reassign contiguous indexes for clean paging.
-  return windows.map((w, i) => ({ ...w, index: i }));
+  return pages;
 }
