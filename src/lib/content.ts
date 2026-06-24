@@ -59,39 +59,56 @@ export function vimeoEmbedUrl(input: string | undefined | null): string | null {
 
 const MS_PER_DAY = 1000 * 60 * 60 * 24;
 
+/** Undated archive interviews are paged in groups of this size. */
+const ARCHIVE_PAGE_SIZE = 12;
+
 export interface InterviewWindow {
-  /** 0 = most recent 12 months, 1 = the 12 months before that, etc. */
+  /** Contiguous position: 0 = first (most recent) window, shown on the home page. */
   index: number;
-  /** Inclusive start (older) bound, exclusive of the previous window. */
+  /** e.g. "2025" or "2024–2025"; empty for the undated archive. */
   label: string;
   items: any[];
 }
 
 /**
- * Group interviews into rolling 12-month windows counting back from `now`,
- * newest first. Empty windows (year gaps) are skipped so paging always lands
- * on content. Expects items already sorted newest-first by publishedAt.
+ * Build the ordered list of windows for the archive.
+ *
+ * Dated interviews are grouped into rolling 12-month windows counting back from
+ * `now`, newest first (empty year-gaps skipped). Undated "previous interviews"
+ * follow, ordered by their `order` field and chunked into fixed-size pages so
+ * the archive never becomes one giant list. Window indexes are contiguous so
+ * the /archive/[page] navigation chains cleanly.
  */
 export function groupByYearWindow(items: any[], now: Date): InterviewWindow[] {
-  const buckets = new Map<number, any[]>();
+  const dated = items.filter((i) => i.data.publishedAt);
+  const undated = items.filter((i) => !i.data.publishedAt);
 
-  for (const item of items) {
+  // --- Dated: rolling 12-month windows, newest first. ---
+  const buckets = new Map<number, any[]>();
+  for (const item of dated) {
     const published = new Date(item.data.publishedAt);
     const daysAgo = Math.floor((now.getTime() - published.getTime()) / MS_PER_DAY);
-    // Future-dated items fall into the most recent window.
-    const idx = Math.max(0, Math.floor(daysAgo / 365));
+    const idx = Math.max(0, Math.floor(daysAgo / 365)); // future-dated -> most recent
     if (!buckets.has(idx)) buckets.set(idx, []);
     buckets.get(idx)!.push(item);
   }
 
-  return [...buckets.keys()]
+  const windows: InterviewWindow[] = [...buckets.keys()]
     .sort((a, b) => a - b)
-    .map((index) => {
-      const items = buckets.get(index)!;
-      const years = items.map((i) => new Date(i.data.publishedAt).getFullYear());
+    .map((key) => {
+      const group = buckets.get(key)!;
+      const years = group.map((i) => new Date(i.data.publishedAt).getFullYear());
       const min = Math.min(...years);
       const max = Math.max(...years);
-      const label = min === max ? `${min}` : `${min}–${max}`;
-      return { index, label, items };
+      return { index: 0, label: min === max ? `${min}` : `${min}–${max}`, items: group };
     });
+
+  // --- Undated: ordered by `order`, chunked into archive pages. ---
+  undated.sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0));
+  for (let i = 0; i < undated.length; i += ARCHIVE_PAGE_SIZE) {
+    windows.push({ index: 0, label: "", items: undated.slice(i, i + ARCHIVE_PAGE_SIZE) });
+  }
+
+  // Reassign contiguous indexes for clean paging.
+  return windows.map((w, i) => ({ ...w, index: i }));
 }

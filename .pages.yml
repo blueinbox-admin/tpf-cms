@@ -21,15 +21,23 @@ content:
       - name: publishedAt
         label: Publish date
         type: date
-        required: true
+        description: >-
+          Leave blank for older "previous interviews" with no known date — they
+          appear in the archive without a date.
         options:
           format: yyyy-MM-dd
       - name: portrait
         label: Portrait photo
         type: image
-        required: true
+        description: Optional. A placeholder is shown until a photo is added.
         options:
           path: public/images/interviews
+      - name: order
+        label: Archive sort order
+        type: number
+        description: >-
+          Only used for undated previous interviews. Lower numbers appear
+          first. Leave blank for dated interviews.
       - name: excerpt
         label: One-line excerpt
         type: string

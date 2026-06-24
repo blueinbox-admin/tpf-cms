@@ -6,8 +6,9 @@ const interviews = defineCollection({
   schema: z.object({
     name: z.string(),
     slug: z.string().optional(),
-    portrait: z.string(),
-    publishedAt: z.coerce.date(),
+    portrait: z.string().optional(),
+    publishedAt: z.coerce.date().optional(),
+    order: z.number().optional(),
     bio: z.object({
       from: z.string().optional(),
       age: z.coerce.number().optional(),

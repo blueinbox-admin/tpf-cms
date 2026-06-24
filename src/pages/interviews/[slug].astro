@@ -32,11 +32,17 @@ const videoTitle = `Interview with ${name}`;
     <!-- Header: portrait + bio -->
     <header class="grid gap-8 md:grid-cols-[280px_1fr] md:gap-12 md:items-start">
       <div class="aspect-square w-full overflow-hidden border-4 border-navy">
-        <img
-          src={portrait}
-          alt={`Portrait of ${name}`}
-          class="h-full w-full object-cover"
-        />
+        {portrait ? (
+          <img
+            src={portrait}
+            alt={`Portrait of ${name}`}
+            class="h-full w-full object-cover"
+          />
+        ) : (
+          <div class="flex h-full w-full items-center justify-center bg-navy/5">
+            <span class="text-7xl font-medium text-navy/30">{name.trim().charAt(0)}</span>
+          </div>
+        )}
       </div>
       <div>
         <h1 class="text-4xl md:text-5xl font-medium text-navy tracking-tight">

@@ -26,7 +26,7 @@ const hasOlder = window.index + 1 < total;
 ---
 
 <BaseLayout
-  title={`Previous interviews (${window.label}) — The Podcast Fellowship`}
+  title={`Previous interviews${window.label ? ` (${window.label})` : ""} — The Podcast Fellowship`}
   description="Past student interviews from The Podcast Fellowship."
 >
   <div class="mx-auto max-w-4xl px-6 py-10 md:py-16">
@@ -38,9 +38,11 @@ const hasOlder = window.index + 1 < total;
         Previous Interviews
       </h1>
       <div class="mt-2 h-1 w-24 bg-gold-soft"></div>
-      <p class="mt-6 text-base md:text-lg text-slate-600 max-w-2xl">
-        {window.label}
-      </p>
+      {window.label && (
+        <p class="mt-6 text-base md:text-lg text-slate-600 max-w-2xl">
+          {window.label}
+        </p>
+      )}
     </header>
 
     <section class="mt-12 md:mt-16">
