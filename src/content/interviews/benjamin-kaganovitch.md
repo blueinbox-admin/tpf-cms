@@ -79,8 +79,9 @@ qa:
       meaningful.
   - question: Tell us about your experience with TPF.
     answer: >-
-      Rabbi Jaffit (Rabbi Jonathan Jaffit of Ohr Campus) knows me well; he knows
-      what I'm interested in and suggests podcasts accordingly.  I prepare by
+      Rabbi Jaffit (Rabbi Jonathan Jaffit of [Ohr
+      Campus](https://www.ohrcampus.com/theteam)) knows me well; he knows what
+      I'm interested in and suggests podcasts accordingly.  I prepare by
       listening carefully, writing down questions that come up, and thinking
       about how the ideas connect to my own life.  What I've come to love about
       Jewish learning through this process is that asking questions is the
