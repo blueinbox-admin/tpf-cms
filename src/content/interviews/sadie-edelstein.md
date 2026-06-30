@@ -1,7 +1,8 @@
 ---
 name: Sadie Edelstein
-publishedAt: 2025-11-01
+publishedAt: 2026-02-01
 portrait: /images/interviews/Sadie Edelstein SOM.jpg
+order: 5
 excerpt: On growing up in a vibrant Jewish community, mentorship through
   podcasts, and finding pride in the difficulty of being Jewish.
 bio:
@@ -14,7 +15,7 @@ bio:
     underprivileged students
 qa:
   - question: Sadie, tell us about your Jewish family background.
-    answer: >
+    answer: >-
       I was born in Grayslake, Illinois, into a very loving Jewish home. I am
       the youngest of four children: boy, girl, boy, girl. When I was very
       little, my oldest brother and my dad became highly religious. Even though
@@ -44,14 +45,13 @@ qa:
       connections with other Jews, teaching my non-Jewish friends and peers
       about Judaism, and teaching Sunday school at a shul near campus.
   - question: How did you hear about The Podcast Fellowship?
-    answer: >
-      My mom is a third grade teacher at Yeshiva Elementary School in Milwaukee,
-      Wisconsin. One of her former students' mom, Chaya Miller, co-runs a Jewish
-      organization called JEM on campus along with her husband. When I got to
-      Madison, I met Chaya Miller, who told me about the Podcast Fellowship!
+    answer: My mom is a third grade teacher at Yeshiva Elementary School in
+      Milwaukee, Wisconsin. One of her former students' mom, Chaya Miller,
+      co-runs a Jewish organization called JEM on campus along with her husband.
+      When I got to Madison, I met Chaya Miller, who told me about the Podcast
+      Fellowship!
   - question: She's a superstar mentor, you know. Tell us about your experience with TPF.
-    answer: >
-      Every Monday morning, right before I go meet with Chaya, I listen to my
+    answer: Every Monday morning, right before I go meet with Chaya, I listen to my
       podcast of choice and will sometimes even write notes on the podcast
       topic. I will then meet Chaya and discuss the big takeaways and/or ask
       questions I have from the podcast. This always leads to very enjoyable,
@@ -59,15 +59,14 @@ qa:
       away with a renewed sense of value and awe for Judaism. I find it to be a
       very fulfilling way to start off my busy week as a college student!
   - question: What is your favorite podcast topic?
-    answer: >
-      There are so many to choose from; that is a hard question! I have honestly
-      enjoyed every podcast I have listened to and have gained so much new
-      insight into Judaism that has helped me to expand my horizons and grow as
-      a Jew. I am thankful for all of the podcasts I have listened to, because
-      without each and every one of them, I would be missing something of the
-      person I am meant to be.
+    answer: There are so many to choose from; that is a hard question! I have
+      honestly enjoyed every podcast I have listened to and have gained so much
+      new insight into Judaism that has helped me to expand my horizons and grow
+      as a Jew. I am thankful for all of the podcasts I have listened to,
+      because without each and every one of them, I would be missing something
+      of the person I am meant to be.
   - question: Did you witness antisemitism after and since October 7th, 2023?
-    answer: >
+    answer: >-
       October 7th was a very eye opening experience for me, in terms of a
       newfound sense of appreciation and pride in my Jewish identity and
       community. It also made me realize that there will always be people who
@@ -83,19 +82,17 @@ qa:
       faith.
   - question: You have discovered what many are not ready to hear! Where do you
       stand in your Jewish observance today?
-    answer: >
-      As one of my Rabbis says, "Labels are for grocery stores". Therefore, I
-      don't like to put a label on my unique experiences with different flavors
-      of Judaism. I will say this though: I am a proud Jew who will forever be
-      connected to my community, heritage, culture, traditions, and wisdom. I am
-      always eager to learn more and to teach others what I do know. I am
-      looking forward to future experiences that will continue to enrich my
-      Jewish identity and that can help me give back to my community! When I
-      have kids one day, I hope to show them the same warmth, comfort, and
-      beauty that Judaism has shown me.
+    answer: "As one of my Rabbis says, \"Labels are for grocery stores\". Therefore,
+      I don't like to put a label on my unique experiences with different
+      flavors of Judaism. I will say this though: I am a proud Jew who will
+      forever be connected to my community, heritage, culture, traditions, and
+      wisdom. I am always eager to learn more and to teach others what I do
+      know. I am looking forward to future experiences that will continue to
+      enrich my Jewish identity and that can help me give back to my community!
+      When I have kids one day, I hope to show them the same warmth, comfort,
+      and beauty that Judaism has shown me."
   - question: Sadie, can you sum up your experience with The Podcast Fellowship in
       one quote?
-    answer: >
-      "A unique opportunity to start my week off on an uplifting note through
-      growing in my awe and appreciation for Judaism!"
+    answer: '"A unique opportunity to start my week off on an uplifting note through
+      growing in my awe and appreciation for Judaism!"'
 ---
