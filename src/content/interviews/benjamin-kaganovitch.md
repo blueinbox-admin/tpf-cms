@@ -2,7 +2,7 @@
 name: Benjamin Kaganovitch
 publishedAt: 2026-04-30
 portrait: /images/interviews/Ben Kaganovitch headshot.jpeg
-order: 1
+order: 3
 bio:
   from: Jerusalem (moved to Canada at the age of 2)
   age: 20
