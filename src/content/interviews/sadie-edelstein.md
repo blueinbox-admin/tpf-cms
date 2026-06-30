@@ -1,8 +1,8 @@
 ---
 name: Sadie Edelstein
-publishedAt: 2026-02-01
+publishedAt: 2026-01-01
 portrait: /images/interviews/Sadie Edelstein SOM.jpg
-order: 5
+order: 6
 excerpt: On growing up in a vibrant Jewish community, mentorship through
   podcasts, and finding pride in the difficulty of being Jewish.
 bio:
