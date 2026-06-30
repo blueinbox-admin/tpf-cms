@@ -1,6 +1,6 @@
 ---
 name: Benjamin Kaganovitch
-publishedAt: 2026-06-30
+publishedAt: 2026-04-30
 portrait: /images/interviews/Ben Kaganovitch headshot.jpeg
 order: 1
 bio:
