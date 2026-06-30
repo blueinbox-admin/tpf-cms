@@ -1,6 +1,6 @@
 ---
 name: Marti Pine
-publishedAt: 2026-03-31
+publishedAt: 2026-03-01
 portrait: /images/interviews/marti-pine.png
 excerpt: On witnessing antisemitism after October 7th, reclaiming a kosher
   kitchen, and the quiet power of unwavering pride.
