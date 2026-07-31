@@ -96,4 +96,12 @@ qa:
       having a Passover Seder and lighting the menorah on Hannukah. In the
       future, I would love to learn Hebrew so that I could connect with even
       more people and study Torah.
+  - question: What has been your experience after October 7, 2023? Have you seen
+      antisemitism? If yes, how do you deal with it?
+    answer: Pending
+  - question: Can you summarize your experience with The Podcast Fellowship in a
+      single quote?
+    answer: '"The Podcast Fellowship has served as an opportunity for curiosity,
+      progress and judgement within myself, and I feel invigorated to continue
+      learning as I progress through the fellowship."'
 ---
