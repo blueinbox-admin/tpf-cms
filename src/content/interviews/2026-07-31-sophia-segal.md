@@ -2,6 +2,7 @@
 name: Sophia Segal
 publishedAt: 2026-07-31
 portrait: /images/interviews/Sophia Segal.jpg
+excerpt: On a grandmother's influence, respectful debate and self-honesty
 bio:
   from: Long Island NY
   age: 21
@@ -34,7 +35,7 @@ qa:
       as well as high holiday services.
 
 
-      The only formal Jewish education I received was Preschool; I attended non
+      The only formal Jewish education I received was preschool; I attended non
       religious public school for my whole life.  However, my grandmother (Nona)
       was a Hebrew School principal and Hebrew teacher and fostered Jewish
       learning opportunities for me. She taught my sister and I how to make
@@ -51,9 +52,10 @@ qa:
       experiences together, so she thought that I would be interested.
   - question: Would you have been interested in The Podcast Fellowship without the
       $15 stipend offer?
-    answer: While the stipend has served as a motivating factor for me in the past,
+    answer: "While the stipend has served as a motivating factor for me in the past,
       what has truly led me to engage in the podcasts is the quality and depth
-      of the conversations with my mentor (See next question  for elaboration).
+      of the conversations with my mentor (ed: see next question for
+      elaboration)."
   - question: Tell us about your experience with TPF. What are your interactions
       with your mentor like? How do you prepare and discuss podcasts with him?
     answer: >-
@@ -96,9 +98,6 @@ qa:
       having a Passover Seder and lighting the menorah on Hannukah. In the
       future, I would love to learn Hebrew so that I could connect with even
       more people and study Torah.
-  - question: What has been your experience after October 7, 2023? Have you seen
-      antisemitism? If yes, how do you deal with it?
-    answer: Pending
   - question: Can you summarize your experience with The Podcast Fellowship in a
       single quote?
     answer: '"The Podcast Fellowship has served as an opportunity for curiosity,
