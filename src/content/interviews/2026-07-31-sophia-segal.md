@@ -74,4 +74,26 @@ qa:
       What I have also found helpful are the video options rather than the pure
       podcasts themselves. I find them to be more dynamic and easier to follow
       as they commonly feature graphics and multiple speakers.
+  - question: Who is your favorite speaker/what is your favorite podcast topic?
+    answer: "Recently, I listened to a podcast titled “[Habits of Happiness:
+      Permission to be
+      Human](https://podcastfellowship.org/podcasts/hoh-permission-to-be-human)\
+      ”. This is one of a series of podcasts that focus on mental well-being and
+      growth.  This specific episode was interesting as it tied in psychology
+      concepts with Judaism. The podcast discussed how in order to be happy, we
+      must accept our imperfections and acknowledge that not every trait is
+      inherently positive. The video did a great job highlighting how this
+      connects to the Torah while focusing on big picture concepts about
+      acceptance and intuition. I look forward to continuing listening to the
+      other episodes within this series!"
+  - question: Where do you stand in your Jewish observance today?
+    answer: I am dedicated to my faith and learning and hope to continue to expand
+      my knowledge of Judaism through education and practice. One of my favorite
+      traditions that I take part in at school is attending a Chabad Shabbat,
+      where I have the special opportunity to disconnect from technology and
+      spend time with friends at the Shabbat table. I also enjoy celebrating
+      different holidays and taking part in traditions with my family like
+      having a Passover Seder and lighting the menorah on Hannukah. In the
+      future, I would love to learn Hebrew so that I could connect with even
+      more people and study Torah.
 ---
