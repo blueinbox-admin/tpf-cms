@@ -44,4 +44,34 @@ qa:
       much about my faith in practice, by spending time with my Nona and hearing
       her stories, witnessing her devotion to religion, and having her as my
       source of inspiration.
+  - question: How did you find out about The Podcast Fellowship?
+    answer: I found out about the fellowship through my sister, who attended NYU for
+      her graduate studies. She had seen a poster advertising the program and
+      sent me the information as well. In the past, we have done Jewish learning
+      experiences together, so she thought that I would be interested.
+  - question: Would you have been interested in The Podcast Fellowship without the
+      $15 stipend offer?
+    answer: While the stipend has served as a motivating factor for me in the past,
+      what has truly led me to engage in the podcasts is the quality and depth
+      of the conversations with my mentor (See next question  for elaboration).
+  - question: Tell us about your experience with TPF. What are your interactions
+      with your mentor like? How do you prepare and discuss podcasts with him?
+    answer: >-
+      My mentor, Rabbi E (Rabbi Yosef Edelstein of [Meor
+      DC](https://www.instagram.com/meordc/)) is always very supportive during
+      our calls and answers my questions from the podcasts. Additionally, there
+      have been multiple occasions where the topics of the podcasts have led me
+      to either question or disagree, and Rabbi E has always been open to
+      hearing my qualms and insights.
+
+
+      I mainly prepare for the meetings by taking detailed notes as I listen to
+      the podcast, so I can utilize these reflections as a foundation of my
+      learning. I like to quote specific phrases or words that stand out to me
+      from the podcast, as it helps me absorb the information.
+
+
+      What I have also found helpful are the video options rather than the pure
+      podcasts themselves. I find them to be more dynamic and easier to follow
+      as they commonly feature graphics and multiple speakers.
 ---
