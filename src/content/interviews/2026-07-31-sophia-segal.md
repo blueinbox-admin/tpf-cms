@@ -2,7 +2,7 @@
 name: Sophia Segal
 publishedAt: 2026-07-31
 portrait: /images/interviews/Sophia Segal.jpg
-excerpt: On a grandmother's influence, respectful debate and self-honesty
+excerpt: On a grandmother's influence, how to debate a rabbi and self-honesty
 bio:
   from: Long Island NY
   age: 21
