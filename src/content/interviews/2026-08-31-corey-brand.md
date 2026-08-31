@@ -8,7 +8,7 @@ bio:
   age: 23
   college: Binghamton University
   major: Geography and GIS (bachelor's and master's degrees)
-  career: Account Manager at a super cool company leveraging geospatial technology
+  career: Account Manager at a super-cool company leveraging geospatial technology
     across the commercial world (retail, real estate, and more)
 qa:
   - question: Corey, tell us about your Jewish background and ancestry.
