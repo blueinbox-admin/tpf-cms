@@ -8,7 +8,6 @@ bio:
   age: 23
   college: Binghamton University
   major: Geography and GIS (bachelor's and master's degrees)
-  career: Tech Sales
 qa:
   - question: Corey, tell us about your Jewish background and ancestry.
     answer: I'm all Ashkenazi; a mix of areas across Eastern Europe, like Poland,
