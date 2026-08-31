@@ -1,6 +1,6 @@
 ---
 name: Miles Kessler
-publishedAt: 2026-08-31
+publishedAt: 2024-11-30
 portrait: /images/interviews/Miles Kessler hi-res.jpeg
 order: 15
 excerpt: A ballplayer with a different kind of streak
