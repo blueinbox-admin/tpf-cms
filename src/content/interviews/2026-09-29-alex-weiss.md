@@ -2,7 +2,7 @@
 name: Alex Weiss
 publishedAt: 2026-09-29
 portrait: /images/interviews/Alex Weiss Headshot.jpeg
-excerpt: The PA in CA
+excerpt: On finding G-d at Stanford
 bio:
   from: Orange County, California
   age: 25
