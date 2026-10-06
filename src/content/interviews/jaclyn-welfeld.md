@@ -1,6 +1,6 @@
 ---
 name: Jaclyn Welfeld
-publishedAt: 2026-10-06
+publishedAt: 2025-11-30
 portrait: /images/interviews/jaclyn welfeld_compressed.jpg
 order: 10
 bio:
