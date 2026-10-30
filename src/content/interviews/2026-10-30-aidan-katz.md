@@ -55,5 +55,7 @@ qa:
   - question: How did you first hear about The Podcast Fellowship?
     answer: I found out about the Podcast Fellowship through a chavrusa I met in
       February of this year.
-  - {}
+  - question: Would you have been interested in TPF without the $15 stipend offer?
+    answer: I think since there’s so many other things drawing on my attention these
+      days, the $15 stipend was a strong point of attraction.
 ---
