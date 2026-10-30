@@ -60,16 +60,16 @@ qa:
       days, the $15 stipend was a strong point of attraction.
   - question: Tell us about your interactions with your mentor, and your thoughts on
       TPF's learning model.
-    answer: I already knew my mentor before we started doing the podcast together,
-      and he is an amazing human being. Warm, friendly, very intelligent, and
-      incredibly inspiring. I believe we have a strong relationship that
-      surpasses the bounds of the actual podcast program. I prepare for my
-      discussions with him by summarizing the key points made by the speaker and
-      imagining how I might implement the lessons the speaker teaches in my own
-      life. The most recent podcast I listened to was by Charlie Harary, who
-      spoke about pushing just a small amount past the boundary of discomfort we
-      experience in challenging circumstances, allowing us to make a habit of
-      becoming more capable and proactive people. After we discuss, the
-      discussion always baloons into more broader topics in Torah and Jewish
-      living in general.
+    answer: "I already knew my mentor (Rabbi Dan Klatzko) before we started doing
+      the podcast together, and he is an amazing human being: warm, friendly,
+      very intelligent, and incredibly inspiring. I believe we have a strong
+      relationship that surpasses the bounds of the actual podcast program. I
+      prepare for my discussions with him by summarizing the key points made by
+      the speaker and imagining how I might implement the lessons the speaker
+      teaches in my own life. The most recent podcast I listened to was by
+      Charlie Harary, who spoke about pushing just a small amount past the
+      boundary of discomfort we experience in challenging circumstances,
+      allowing us to make a habit of becoming more capable and proactive people.
+      After we discuss, the discussion always balloons into more broader topics
+      in Torah and Jewish living in general."
 ---
