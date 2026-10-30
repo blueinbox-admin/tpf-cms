@@ -12,7 +12,7 @@ bio:
   career: Financial Analysis (Skilled in Financial Modeling, AI, and available for
     hire)
 qa:
-  - question: Tell us about your Jewish family background.
+  - question: Aidan, tell us about your Jewish family background.
     answer: >-
       My mother's side hails from Tashkent, Uzbekistan, with a Persian
       background, and my father comes from Chust, Ukraine. I will do my best to
