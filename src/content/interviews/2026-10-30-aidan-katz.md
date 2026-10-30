@@ -52,4 +52,8 @@ qa:
       goods that didn’t have a hechsher.  The values we kept to were all mixed
       up, some American, many Russian, all of which had a Jewish flavor, but
       never quite clear on virtues of the Torah.
+  - question: How did you first hear about The Podcast Fellowship?
+    answer: I found out about the Podcast Fellowship through a chavrusa I met in
+      February of this year.
+  - {}
 ---
