@@ -90,4 +90,7 @@ qa:
       see antisemitism flaring up, rather than become fearful or depressed, I’ve
       become emboldened in my belief that I am doing the right thing and more
       motivated to practice my Judaism and continue my Torah study.
+  - question: Can you summarize your experience with The Podcast Fellowship in a
+      single quote?
+    answer: TPF is a stepping-stone to a life guided by ultimate Truth.
 ---
