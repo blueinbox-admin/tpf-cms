@@ -4,7 +4,7 @@ publishedAt: 2026-10-30
 portrait: /images/interviews/Aidan Katz.jpg
 excerpt: Disillusionment of the father becomes inspiration of the son
 bio:
-  from: Queens, NY
+  from: Queens Village, NY
   age: 25
   college: NYU Stern School of Business
   major: Finance and Accounting
@@ -52,6 +52,13 @@ qa:
       goods that didn’t have a hechsher.  The values we kept to were all mixed
       up, some American, many Russian, all of which had a Jewish flavor, but
       never quite clear on virtues of the Torah.
+  - question: Where do you stand in your Jewish observance today?
+    answer: I am currently in Yeshiva in The Shaar, a ba'al teshuva program at Shor
+      Yoshuv in Far Rockaway. While I look for full-time work (again, if anyone
+      might know someone, please find me through LinkedIn or through TPF
+      leadership!), I take classes in Mussar, Gemara, Pirkei Avot, and Chumash
+      daily, and have been working hard to keep Shabbos, Daven, and do mitzvot
+      like wrapping tefillin and not speaking lashon hara.
   - question: How did you first hear about The Podcast Fellowship?
     answer: I found out about the Podcast Fellowship through a chavrusa I met in
       February of this year.
@@ -74,13 +81,6 @@ qa:
       in Torah and Jewish living in general."
   - question: Who are your favorite podcast speakers?
     answer: Charlie Harary and Rabbi Manis Friedman have been far and away my favorites
-  - question: Where do you stand in your Jewish observance today?
-    answer: I am currently in Yeshiva in The Shaar, a ba'al teshuva program at Shor
-      Yoshuv in Far Rockaway. While I look for full-time work (again, if anyone
-      might know someone, please find me through LinkedIn or through TPF
-      leadership!), I take classes in Mussar, Gemara, Pirkei Avot, and Chumash
-      daily, and have been working hard to keep Shabbos, Daven, and do mitzvot
-      like wrapping tefillin and not speaking lashon hara.
   - question: What has been your experience after October 7, 2023?  Have you seen
       antisemitism?  If yes, how do you deal with it?
     answer: My life has gotten exponentially better since October 7th, as I’ve made
@@ -93,4 +93,12 @@ qa:
   - question: Can you summarize your experience with The Podcast Fellowship in a
       single quote?
     answer: TPF is a stepping-stone to a life guided by ultimate Truth.
+  - question: Wow!  Most TPF students are not in full-time yeshiva.  Tell us what
+      gap TPF fills for you that supplements your yeshiva education
+    answer: "With TPF, I can explore topics that I don't have the flexibility for in
+      a structured learning environment.  (Ed. note: According to Aidan's mentor
+      Rabbi Dan Klatzko, their weekly TPF sessions enable them to go through a
+      structured system of Torah understanding, including Rabbi Jonathan
+      Rietti's Taryag Mitzvos mnemonic learning system, which helps organize
+      what Aidan learns in yeshiva as well as add new and deeper understanding)"
 ---
