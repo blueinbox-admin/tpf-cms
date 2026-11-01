@@ -74,5 +74,11 @@ qa:
       in Torah and Jewish living in general."
   - question: Who are your favorite podcast speakers?
     answer: Charlie Harary and Rabbi Manis Friedman have been far and away my favorites
-  - {}
+  - question: Where do you stand in your Jewish observance today?
+    answer: I am currently in Yeshiva in a Baal Teshuva program at Shor Yoshuv in
+      Far Rockaway. While I look for full-time work (again, if anyone might know
+      someone, please find me through LinkedIn or through TPF leadership!), I
+      take classes in Mussar, Gamorrah, Pirkei Avot, and Chumash daily, and have
+      been working hard to keep Shabbos, Daven, and do mitzvot like wrapping
+      tefilin and not speaking Lashon Hara.
 ---
