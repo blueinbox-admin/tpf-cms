@@ -59,6 +59,14 @@ qa:
       leadership!), I take classes in Mussar, Gemara, Pirkei Avot, and Chumash
       daily, and have been working hard to keep Shabbos, Daven, and do mitzvot
       like wrapping tefillin and not speaking lashon hara.
+  - question: Wow!  Most TPF students are not in full-time yeshiva.  Tell us what
+      gap TPF fills for you that supplements your yeshiva education
+    answer: "With TPF, I can explore topics that I don't have the flexibility for in
+      a structured learning environment.  (Ed. note: According to Aidan's mentor
+      Rabbi Dan Klatzko, their weekly TPF sessions enable them to go through a
+      structured system of Torah understanding, including Rabbi Jonathan
+      Rietti's Taryag Mitzvos learning system, which helps organize what Aidan
+      learns in yeshiva as well as add new and deeper understanding)"
   - question: How did you first hear about The Podcast Fellowship?
     answer: I found out about the Podcast Fellowship through a chavrusa I met in
       February of this year.
@@ -93,12 +101,4 @@ qa:
   - question: Can you summarize your experience with The Podcast Fellowship in a
       single quote?
     answer: TPF is a stepping-stone to a life guided by ultimate Truth.
-  - question: Wow!  Most TPF students are not in full-time yeshiva.  Tell us what
-      gap TPF fills for you that supplements your yeshiva education
-    answer: "With TPF, I can explore topics that I don't have the flexibility for in
-      a structured learning environment.  (Ed. note: According to Aidan's mentor
-      Rabbi Dan Klatzko, their weekly TPF sessions enable them to go through a
-      structured system of Torah understanding, including Rabbi Jonathan
-      Rietti's Taryag Mitzvos learning system, which helps organize what Aidan
-      learns in yeshiva as well as add new and deeper understanding)"
 ---
