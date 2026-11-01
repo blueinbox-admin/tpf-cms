@@ -83,11 +83,11 @@ qa:
       like wrapping tefillin and not speaking lashon hara.
   - question: What has been your experience after October 7, 2023?  Have you seen
       antisemitism?  If yes, how do you deal with it?
-    answer: My life has gotten exponentially better since October 7th as I’ve made
+    answer: My life has gotten exponentially better since October 7th, as I’ve made
       the effort to get closer to Hashem. I’ve seen antisemitism as a given my
-      whole life, and not for a moment did I believe or did my parents instill
-      in me that it would get any better. Only now when I see antisemitism
-      flaring up, rather than become fearful or depressed, I’ve become
-      emboldened in my belief that I am doing the right thing and more motivated
-      to practice my Judaism and continue my Torah study.
+      whole life, and not for a moment did I believe, nor did my parents instill
+      in me, that it would get any better. (The difference is that) now when I
+      see antisemitism flaring up, rather than become fearful or depressed, I’ve
+      become emboldened in my belief that I am doing the right thing and more
+      motivated to practice my Judaism and continue my Torah study.
 ---
