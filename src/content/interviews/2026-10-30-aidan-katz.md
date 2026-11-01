@@ -72,4 +72,7 @@ qa:
       allowing us to make a habit of becoming more capable and proactive people.
       After we discuss, the discussion always balloons into more broader topics
       in Torah and Jewish living in general."
+  - question: Who are your favorite podcast speakers?
+    answer: Charlie Harary and Rabbi Manis Friedman have been far and away my favorites
+  - {}
 ---
