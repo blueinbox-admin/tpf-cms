@@ -99,6 +99,6 @@ qa:
       a structured learning environment.  (Ed. note: According to Aidan's mentor
       Rabbi Dan Klatzko, their weekly TPF sessions enable them to go through a
       structured system of Torah understanding, including Rabbi Jonathan
-      Rietti's Taryag Mitzvos mnemonic learning system, which helps organize
-      what Aidan learns in yeshiva as well as add new and deeper understanding)"
+      Rietti's Taryag Mitzvos learning system, which helps organize what Aidan
+      learns in yeshiva as well as add new and deeper understanding)"
 ---
